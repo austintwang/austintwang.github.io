@@ -28,8 +28,12 @@ p {
 }
 
 a {
-    text-decoration-color: #00000020;
+    text-decoration-color: #9696964d;
     text-decoration-thickness: 0.08em;
+}
+
+a:hover {
+    color: #3366CC
 }
 
 #links a {
@@ -47,3 +51,21 @@ a {
         margin-left: 0;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --pointer-move-line-color: #f3a;
+  
+      --background-color: #111;
+      --foreground-color-rgb: 255,254,245;
+      --foreground-color-a: 0.8;
+      --foreground-color: rgba(255,254,245,0.8); 
+  
+      --base-grid-color1: rgba(240,155,255, 0.1);
+      --base-grid-color2: rgba(240,155,255, 0.05);
+    }
+
+    a:hover {
+        color: #73A8F0
+    }
+  }
